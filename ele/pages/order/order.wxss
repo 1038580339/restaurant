@@ -1,0 +1,14 @@
+/* pages/order/order.wxss */
+.orderData{
+  font-size: 12px;
+}
+.confirmButton{
+  width: 100px;
+  font-size: 12px;
+  float: right;
+  margin-top: 10px;
+}
+.doneOrder{
+  float: right;
+   margin-top: 10px;
+}

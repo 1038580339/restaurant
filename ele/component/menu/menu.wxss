@@ -1,0 +1,12 @@
+.menu{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  border-top: 1px #888888 solid;
+  background-color: white;
+}
+.menu navigator{
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+}

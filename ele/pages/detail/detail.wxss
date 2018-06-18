@@ -1,0 +1,12 @@
+/* pages/detail/detail.wxss */
+.detail{
+  font-size: 12px;
+}
+.detailBottom{
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  background-color: #DDDDDD;
+  width: 100%;
+  font-size: 16px;
+}

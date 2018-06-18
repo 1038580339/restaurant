@@ -1,0 +1,29 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+<block wx:for="{{cart}}">
+ <view class='dishes' data-dishes = "{{item}}" bindtap="toDetail">
+ <image src="{{item.image}}"class="dishesImg" mode="scaleToFill" style='width:100%;height:100px;'></image>
+ <view class='dishesRight'>
+ <view>{{item.name}}</view>
+ <view>{{item.description}}</view>
+ <view>单价￥{{item.price}}</view>
+ <view>
+ <text wx:if="{{item.number>0}}" bindtap='reduceNumber' data-id='{{item.id}}' data-number='{{item.number}}'>-</text>
+ <text wx:if="{{item.number>0}}">{{item.number}}</text>
+ <text bindtap='addNumber' data-id='{{item.id}}' data-number='{{item.number}}'>+</text>
+ </view>
+ </view>
+ </view>
+ </block>
+</view>
+ <view class='chooseType'>
+ <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{types}}">
+    <radio value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+  </radio-group>
+ </view>
+<view class='cartBottom'>
+<text style='line-height:50px;'>￥{{totalPrice}}</text>
+<button class='toOrder' disabled='{{cart.length<=0}}' bindtap="toOrder">去下单</button>
+</view>

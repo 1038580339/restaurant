@@ -1,0 +1,4 @@
+<!--pages/login/login.wxml-->
+<view class="loginBlock">
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class='login' size='mini'>授权登陆</button> 
+</view>

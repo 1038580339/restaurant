@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/order/order",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/detail/detail",
+    "pages/payOrder/payOrder"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "餐饮服务",
+    "navigationBarTextStyle": "black"
+  }
+}

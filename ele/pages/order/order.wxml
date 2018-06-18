@@ -1,0 +1,18 @@
+<!--pages/order/order.wxml-->
+<view class='orderData'>
+<block wx:for="{{orderData}}" wx:for-item="order">
+<view style='margin-top:20px;'>{{order.status=="0"?"已创建":(order.status=="1"?"已付款":(order.status=="2"?"已完成":"已评价"))}}</view>
+<view wx:for="{{order.items}}" wx:for-item="orderDishes">
+{{orderDishes.name}}*{{orderDishes.quantity}}
+</view>
+<view style='border-bottom:1px solid #888888;'></view>
+<view wx:if="{{order.status=='0'||order.status=='1'}}">
+<button class='confirmButton' bindtap='confirmOrder' data-orderid="{{order.id}}">确认收货</button>
+<view style='clear:both;'></view>
+</view>
+<view wx:else>
+<text class='doneOrder'>订单已完成</text>
+<view style='clear:both;'></view>
+</view>
+</block>
+</view>

@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="index">
+<view class='swiper'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" class='image'/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class='search'>
+<block></block>
+<input placeholder="搜索您喜欢的商品" class='searchInput'/>
+</view>
+<view class='order'>
+<!-- 左侧分类栏 -->
+<view class='orderLeft'>
+  <block wx:for="{{menuType}}">
+  <view class='menuType {{selectMenuType==item.id?"orderLeftSelect":""}}' data-id = "{{item.id}}" bindtap="clickType">{{item.name}}</view>
+  </block>
+</view>
+<!-- 右侧具体菜品栏 -->
+<view class='orderRight'>
+ <block wx:for="{{dishes}}">
+ <view class='dishes' data-dishes = "{{item}}" bindtap="toDetail">
+ <image src="{{item.image}}"class="dishesImg" mode="scaleToFill" style='width:100%;height:100px;'></image>
+ <view class='dishesRight'>
+ <view>{{item.name}}</view>
+ <view>{{item.description}}</view>
+ <view>月售{{item.monthlySales}} 赞{{item.praiseVolume}} </view>
+ <view>￥{{item.price}}</view>
+ </view>
+ </view>
+ </block>
+</view>
+</view>
+  <!-- sample.wxml -->
+<view class="btn-area">
+ <menu></menu>
+</view>
+</view>

@@ -1,0 +1,6 @@
+<view class='menu'>
+  <navigator url="/pages/index/index" hover-class="navigator-hover">主页</navigator>
+  <navigator url="/pages/cart/cart" hover-class="other-navigator-hover">购物车</navigator>
+  <navigator url="/pages/order/order" hover-class="other-navigator-hover">订单</navigator>
+  <navigator url="/pages/personal/personal" hover-class="other-navigator-hover">我的</navigator>
+</view>

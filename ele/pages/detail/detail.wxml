@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+<image src="{{detail.image}}" style='width:100%;'></image>
+<view>
+{{detail.name}}
+</view>
+
+<view>
+月售{{detail.monthlySales}} 赞{{detail.praiseVolume}}
+</view>
+
+<view>
+{{detail.description}}
+</view>
+
+<view class='detailBottom'>
+<text style='line-height:50px;'>￥{{detail.price}}</text>
+<view style='float:right;line-height:50px;'>
+<text wx:if="{{number>0}}" bindtap='reduceNumber'>-</text>
+<text wx:if="{{number>0}}">{{number}}</text>
+<text bindtap='addNumber'>+</text>
+</view>
+</view>
+
+</view>

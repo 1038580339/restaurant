@@ -1,0 +1,69 @@
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
+}
+.btn-area{
+  width: 100%;
+  position: fixed;
+  bottom:0;
+}
+/* .swiper{
+  height: 150px;
+} */
+.image{
+  width: 100%;
+  height: 500rpx;
+}
+.search{
+  height: 80rpx;
+  background-color: #CCCCCC;
+  padding-top: 20rpx;
+}
+.searchInput{
+  background-color:white;
+  height:60rpx;
+  width:80%;
+  border-radius:5px;
+  margin-left:10%;
+  padding-left: 8px;
+}
+.order{
+  display: flex;
+  padding-bottom: 40px;
+}
+.orderLeft{
+ flex:1;
+ background-color: #DDDDDD;
+ min-height: 370px;
+ 
+}
+.orderLeftSelect{
+  background-color: white;
+}
+.orderRight{
+ flex: 4;
+  /* background-color: blue;  */
+ overflow: scroll;
+  /* max-height: 370px;  */
+}
+.menuType{
+  padding: 10px;
+}
+.index{
+  font-size: 12px;
+}
+.dishes{
+  display: flex;
+  padding:20px 10px;
+  padding-bottom: 0;
+}
+.dishesImg{
+  flex: 2;
+}
+.dishesRight{
+flex:5;
+margin-left: 10px;
+}

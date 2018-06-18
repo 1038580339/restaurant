@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "登陆",
+  "usingComponents": {
+    "menu": "/component/menu/menu"
+  }
+}
